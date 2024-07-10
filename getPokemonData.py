@@ -1,6 +1,7 @@
 import json
+import pokebase as pb
 
-def getPokemonDataByName(name: str):
+def getPokemonByName(name: str):
     with open("data/pokemon.json", mode="r", encoding="utf-8") as pokemon_file:
         pokemon_registry = json.load(pokemon_file)
 
